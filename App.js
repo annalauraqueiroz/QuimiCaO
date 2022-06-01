@@ -1,13 +1,56 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer, TabActions } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from './screens/Home.js'
+import TelaCard from './screens/TelaCards.js'
+import TabelaPeriodica from './screens/TabelaPeriodica.js';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+const HomeStack = createNativeStackNavigator();
+
+function HomeStackScreen(){
+  return(
+    <HomeStack.Navigator screenOptions={{headerShown: false}}>
+      <HomeStack.Screen 
+        name="TelaInicial" 
+        component={HomeScreen}
+        title="Conteúdos" />
+      <HomeStack.Screen name="TelaCards" component={TelaCard} />
+    </HomeStack.Navigator>
+  );
+}
+
+const BottomTab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer initialRouteName="Home">
+
+      <BottomTab.Navigator screenOptions={{headerShown: false}}>
+        <BottomTab.Screen 
+          name="Home" 
+          component={HomeStackScreen} 
+          title="Conteúdos"
+          options={{
+            tabBarIcon: ({color}) => <MaterialCommunityIcons name="atom" size={24} color={color} />,
+            tabBarLabel: 'Conteúdos'
+          }}
+
+          />
+        <BottomTab.Screen 
+          name="TabelaPeriodica" 
+          component={TabelaPeriodica}
+          options={{
+            tabBarIcon: ({color}) => <MaterialCommunityIcons name="periodic-table" size={24} color={color} />,
+            tabBarLabel: 'Tabela Periódica'
+          }}
+          />
+      </BottomTab.Navigator>
+
+    </NavigationContainer>
   );
 }
 
