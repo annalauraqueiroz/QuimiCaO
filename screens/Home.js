@@ -6,27 +6,26 @@ import { styles } from '../assets/styles/mainStyles.js';
 import Header from '../components/Header.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import teste from '../DATABASE/mainDB.json'
 
 export default function HomeScreen({navigation}) {
 
 
   return (
     <View style={styles.container}>
-      <StatusBar style="dark" />
-
-     
-
+    <StatusBar style="dark" />
     <ScrollView contentContainerStyle={styles.listacards}>
       <View style={styles.listacards}>
-                  <View style={styles.card}>
-                  <TouchableOpacity
-                        style={styles.card}
-                        onPress={() => navigation.navigate('TelaCards')}
-                    >
-                        <Image style={styles.ImgIcones} source={require('../assets/images/Organica.png')}/>
-                        <Text>Química Orgânica</Text>
-                    </TouchableOpacity>
+        
+        <View style={styles.card}>
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => navigation.navigate('TelaCards')}
+            >
+                        {/* <Image style={styles.ImgIcones} source={require('{teste.itens[0].img}')}/> */}
+              <Text>{teste.itens[0].name}</Text>
+                        
+            </TouchableOpacity>
 
                   </View>
 
@@ -36,7 +35,7 @@ export default function HomeScreen({navigation}) {
                         onPress={() => navigation.navigate('TelaCards')}
                     >
                         <Image style={styles.ImgIcones} source={require('../assets/images/estatm.png')}/>
-                        <Text>Estrutura Atômica</Text>
+                        <Text>{teste.itens.length}</Text>
                     </TouchableOpacity>
                   </View>
 

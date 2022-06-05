@@ -1,0 +1,14 @@
+{
+    "itens": [
+        {
+            "name": "quimica organica",
+            "img": "../assets/images/Organica.png"
+        },
+        {
+            "name": "quimica inorganica",
+            "img": "../assets/images/estatm.png"
+        }
+        
+    ]
+  }
+  
