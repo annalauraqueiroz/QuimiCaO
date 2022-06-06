@@ -5,7 +5,7 @@ import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNat
 import { styles } from '../assets/styles/mainStyles.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import Card from '../components/Card.js'
 
 export default function TabelaPeriodica() {
 
@@ -23,23 +23,7 @@ export default function TabelaPeriodica() {
           </View> */}
       </View>
 
-    <ScrollView contentContainerStyle={styles.listacards}>
-      <View style={styles.listacards}>
-                  <View style={styles.card}>
-                   
-                      <Text> tabelaperiodica</Text>
-
-                  </View>
-
-                  
-
-       </View>
-
-
-
-
-
-    </ScrollView>
+        
     
         
     </View>

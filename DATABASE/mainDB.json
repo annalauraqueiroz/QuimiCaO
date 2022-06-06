@@ -1,14 +1,20 @@
 {
     "itens": [
         {
+            "idItem": "1",
             "name": "quimica organica",
-            "img": "../assets/images/Organica.png"
+            "img": "require('../assets/images/Organica.png')"
         },
         {
+            "idItem": 2,
             "name": "quimica inorganica",
-            "img": "../assets/images/estatm.png"
+            "img": "require('../assets/images/estatm.png')"
+        },
+        {
+            "idItem": 3,
+            "name": "Ligações Químicas",
+            "img": "require('../assets/images/ligacoesquimicas.png')"
         }
-        
     ]
   }
   
