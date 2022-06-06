@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export default class Header extends Component {
 
-  render (props){
+  render (){
       return(
         <View style={styles.header}>
          <View style={styles.ImgIcones}>
