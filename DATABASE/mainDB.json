@@ -14,6 +14,11 @@
             "idItem": 3,
             "name": "Ligações Químicas",
             "img": "require('../assets/images/ligacoesquimicas.png')"
+        }, 
+        {
+            "idItem": 4,
+            "name": "Ligações",
+            "img": "require('../assets/images/ligacoesquimicas.png')"
         }
     ]
   }
