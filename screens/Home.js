@@ -27,7 +27,7 @@ const UniqueCard = ({item, onPress})=> (
 export default function HomeScreen({navigation}) {
   
   const DATA = Dados.itens;
-
+  let numColums=2;
   const renderUniqueCard = ({item}) => {
     return(
       <UniqueCard
@@ -41,15 +41,17 @@ export default function HomeScreen({navigation}) {
     )
   }
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
     <StatusBar style="dark" />
-    <SafeAreaView>
-    <FlatList
+    
+    
+    <FlatList contentContainerStyle={styles.listacards}
+      numColumns={numColums}
       data={DATA}
       renderItem={renderUniqueCard}
       id={UniqueCard.id}
     />
     </SafeAreaView>
-    </View>
+    
   );
 }

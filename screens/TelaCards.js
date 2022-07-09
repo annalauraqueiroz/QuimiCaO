@@ -15,8 +15,8 @@ export default function TelaCard({route}) {
     <SafeAreaView>
     <ScrollView contentContainerStyle={styles.listacards}>
       <View style={styles.listacards}>                  
-                   
-                      <Text> {route.params.nome}</Text>
+      {route.params.idItem}
+                      <Text> - {route.params.nome}</Text>
                                     
        </View>
 

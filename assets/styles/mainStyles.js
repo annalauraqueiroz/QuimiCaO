@@ -5,8 +5,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F8F8FF',
     //justifyContent: 'center',
-   // flexDirection: 'column',
+   //flexDirection: 'column',
    // marginTop: 50,
+    alignItems: 'center',
     borderLeftWidth: 20,
     borderRightWidth: 20,
     borderColor: '#1b3fa2',
@@ -16,12 +17,12 @@ export const styles = StyleSheet.create({
    //width: '100%',
   //  height: '100%',
  //   alignItems: 'center',
-   // alignContent: 'space-around',
-    flexDirection: 'row',
- //   paddingLeft: 20,
+    //alignContent: 'space-around',
+   // flexDirection: 'row',
+    //paddingLeft: 20,
    // paddingRight: 20,
     justifyContent: 'space-around',
-    flexWrap: 'wrap'
+   
 
   },
   card: {
