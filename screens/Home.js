@@ -1,14 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useEffect, useState} from 'react';
-import { Text, View,FlatList, Image, ScrollView, TouchableOpacity, Button} from 'react-native';
+import { Text, View,FlatList, Image, ImageBackground, TouchableOpacity, Button} from 'react-native';
 import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 import { styles } from '../assets/styles/mainStyles.js';
 import Header from '../components/Header.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import Dados from '../DATABASE/mainDB.json'
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Cardi from '../components/Card'
+import { useFonts, Bangers_400Regular } from '@expo-google-fonts/bangers';
 import Dados from '../DATABASE/ConteudosDB'
 
 
@@ -18,9 +17,8 @@ const UniqueCard = ({item, onPress})=> (
      style={styles.card}
      onPress={onPress}
    >
-    
        <Image style = {styles.ImgIcones} source={item.img}/>   
-       <Text>{item.name}</Text>
+       <Text style={styles.TextTitulo}>{item.name}</Text>
                  
  </TouchableOpacity>
    
@@ -28,7 +26,6 @@ const UniqueCard = ({item, onPress})=> (
 );
 
 export default function HomeScreen({navigation}) {
-  
   const DATA = Dados;
   let numColums=2;
   const renderUniqueCard = ({item}) => {
@@ -44,7 +41,9 @@ export default function HomeScreen({navigation}) {
     )
   }
   return (
-    <SafeAreaView style={styles.container}>
+    
+    <View style={styles.container}>
+    <ImageBackground source={require('../assets/images/background.png')} resizeMode="cover" >
     <StatusBar style="dark" />
     <FlatList contentContainerStyle={styles.listacards}
       numColumns={numColums}
@@ -52,7 +51,8 @@ export default function HomeScreen({navigation}) {
       renderItem={renderUniqueCard}
       id={UniqueCard.id}
     />
-    </SafeAreaView>
+    </ImageBackground>
+    </View>
     
   );
 }

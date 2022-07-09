@@ -3,13 +3,13 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F8F8FF',
+    //backgroundColor: '#F8F8FF',
     //justifyContent: 'center',
    //flexDirection: 'column',
    // marginTop: 50,
-    alignItems: 'center',
-    borderLeftWidth: 20,
-    borderRightWidth: 20,
+    //alignItems: 'center',
+    //borderLeftWidth: 20,
+   // borderRightWidth: 20,
     borderColor: '#1b3fa2',
   },
   listacards:{
@@ -21,7 +21,9 @@ export const styles = StyleSheet.create({
    // flexDirection: 'row',
     //paddingLeft: 20,
    // paddingRight: 20,
+    marginTop: 100,
     justifyContent: 'space-around',
+    alignItems: 'center',
    
 
   },
@@ -32,6 +34,18 @@ export const styles = StyleSheet.create({
     margin: 10,
     borderRadius: 5,
     alignItems: 'center',
+    
+  },
+  ImgIcones:{
+    flexDirection: 'row',
+    width: 90,
+    height: 90
+  },
+  TextTitulo:{
+    fontSize: 24,
+    textAlign: 'center',
+    color: '#00858b',
+    fontFamily:  'Zing',
   },
   header: {
     height: 140,
@@ -47,20 +61,14 @@ export const styles = StyleSheet.create({
     maxHeight: 40,
 
   },
-  ImgIcones:{
-    flexDirection: 'row',
-    width: 100,
-    height: 100
-  },
+  
+
   ImgLogo: {
      borderRadius: 10,
      paddingLeft: 100,
   },
   
-  TextTitulo:{
-    fontSize: 20,
-  }
-
+  
 
 
 
