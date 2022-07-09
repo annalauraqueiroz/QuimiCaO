@@ -6,17 +6,20 @@ import { styles } from '../assets/styles/mainStyles.js';
 import Header from '../components/Header.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Dados from '../DATABASE/mainDB.json'
+//import Dados from '../DATABASE/mainDB.json'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Cardi from '../components/Card'
+import Dados from '../DATABASE/ConteudosDB'
+
 
 const UniqueCard = ({item, onPress})=> (
   <View style={styles.card}>
-
   <TouchableOpacity
      style={styles.card}
      onPress={onPress}
    >
-       <Image style={styles.ImgIcones} source={{uri:item.img}}/>
+    
+       <Image style = {styles.ImgIcones} source={item.img}/>   
        <Text>{item.name}</Text>
                  
  </TouchableOpacity>
@@ -26,7 +29,7 @@ const UniqueCard = ({item, onPress})=> (
 
 export default function HomeScreen({navigation}) {
   
-  const DATA = Dados.itens;
+  const DATA = Dados;
   let numColums=2;
   const renderUniqueCard = ({item}) => {
     return(
@@ -43,8 +46,6 @@ export default function HomeScreen({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
     <StatusBar style="dark" />
-    
-    
     <FlatList contentContainerStyle={styles.listacards}
       numColumns={numColums}
       data={DATA}
