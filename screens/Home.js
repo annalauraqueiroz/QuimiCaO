@@ -28,11 +28,22 @@ const UniqueCard = ({item, onPress})=> (
 export default function HomeScreen({navigation}) {
   const DATA = Dados;
   let numColums=2;
+  const nomeTela =({item})=>{
+    switch(item.idItem){
+      case 1:
+        return 'QuimicaOrganicaScreen';
+      case 2:
+        return 'QuimicaOrganicaScreen';
+      case 3:
+        return ''
+    }
+  };
+
   const renderUniqueCard = ({item}) => {
     return(
       <UniqueCard
         item={item}
-        onPress={() => navigation.navigate(nometela, {
+        onPress={() => navigation.navigate(nomeTela({item}), {
           id: item.idItem,
           nome: item.name,
         })}
