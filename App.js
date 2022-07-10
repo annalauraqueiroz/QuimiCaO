@@ -30,13 +30,15 @@ const HomeStack = createNativeStackNavigator();
 
 function HomeStackScreen(){
   return(
-    <HomeStack.Navigator screenOptions={{headerShown: false}}>
-      <HomeStack.Screen 
-        name="TelaInicial" 
-        component={HomeScreen}
-        title="Conteúdos" />
-      <HomeStack.Screen name="TelaCards" component={TelaCard}
-      />
+    <HomeStack.Navigator screenOptions={{
+      headerTitle: '',
+      headerRight: (props) => <LogoTitle{...props}/>,
+      //headerStyle: {backgroundColor: '#FFFFFF'},
+      headerTransparent: true,
+    }}
+    >
+      <HomeStack.Screen name="TelaInicial" component={HomeScreen}/>
+      <HomeStack.Screen name="TelaCards" component={TelaCard}/>
       <HomeStack.Screen name='QuimicaOrganica' component={Organica}/> 
       <HomeStack.Screen name='EstruturaAtomica' component={EstruturaAtomica}/>
       <HomeStack.Screen name='TabelaPeriodica' component={TabelaPeriodica}/>
@@ -51,8 +53,6 @@ function HomeStackScreen(){
   );
 }
 
-const BottomTab = createBottomTabNavigator();
-
 export default function App() {
   let [fontsLoaded] = useFonts({
     Bangers_400Regular,
@@ -62,36 +62,8 @@ export default function App() {
   if (!fontsLoaded) 
     return null;
   return (
-    <NavigationContainer initialRouteName="Home">
-        <BottomTab.Navigator>
-        <BottomTab.Screen 
-          name="Home" 
-          component={HomeStackScreen} 
-          title="Conteúdos"
-          options={{
-            headerTitleStyle: {display: 'none'},
-            tabBarIcon: ({color}) => <MaterialCommunityIcons name="atom" size={24} color={color} />,
-            tabBarLabel: 'Conteúdos',
-            headerRight: (props) => <LogoTitle{...props}/>,
-            //headerStyle: {backgroundColor: '#FFFFFF'},
-            headerTransparent: true,
-            tabBarActiveTintColor: '#BEF8EB',
-            tabBarInactiveTintColor: '#04c6cf',
-            tabBarStyle: {backgroundColor:'#227fbb'}
-          }}
-
-          />
-        <BottomTab.Screen 
-          name="TabelaPeriodica" 
-          component={TabelaPeriodica}
-          options={{
-            tabBarIcon: ({color}) => <MaterialCommunityIcons name="periodic-table" size={24} color={color} />,
-            tabBarLabel: 'Tabela Periódica',
-            tabBarActiveTintColor: '#FFFDF0',
-            tabBarInactiveTintColor: '#1B3FA2',
-          }}
-          />
-      </BottomTab.Navigator>
+    <NavigationContainer initialRouteName="Home" >
+      <HomeStackScreen />
     </NavigationContainer>
     
   );
@@ -102,10 +74,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  header: {
-    //backgroundColor: '#00858B',
-
   },
   ImgIcone1:{
     maxWidth: 175,
