@@ -49,6 +49,7 @@ const Conteudos = [
         name: "Sobre o APP",
         img: require('../assets/images/sobre.png')
     },
+    
 ]
 
 export default Conteudos;
