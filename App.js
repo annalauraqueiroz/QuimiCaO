@@ -3,13 +3,21 @@ import { StyleSheet, Image, View, Text} from 'react-native';
 import { NavigationContainer, TabActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screens/Home.js'
-import TelaCard from './screens/TelaCards.js'
-import Organica from './screens/disciplinas/QuimicaOrganicaScreen.js'
-import TabelaPeriodica from './screens/TabelaPeriodica.js';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFonts, Bangers_400Regular } from '@expo-google-fonts/bangers';
 
+import HomeScreen from './screens/Home.js'
+import TelaCard from './screens/TelaCards.js'
+import Organica from './screens/disciplinas/QuimicaOrganicaScreen.js'
+import EstruturaAtomica from './screens/disciplinas/EstruturaAtomicaScreen.js'
+import TabelaPeriodica from './screens/disciplinas/TabelaPeriodicaScreen.js';
+import LigacoesQuimicas from './screens/disciplinas/LigacoesQuimicasScreen.js';
+import InteracoesIntermoleculares from './screens/disciplinas/InteracoesIntermolecularesScreen.js';
+import EquilibrioQuimico from './screens/disciplinas/EquilibrioQuimicoScreen.js';
+import CineticaQuimica from './screens/disciplinas/CineticaQuimicaScreen.js';
+import Solucoesemisturas from './screens/disciplinas/SolucoesemisturasScreen.js';
+import FuncoesInorganicas from './screens/disciplinas/FuncoesInorganicasScreen.js';
+import SobreOAPP from './screens/disciplinas/SobreOAPPScreen.js';
 
 function LogoTitle(){
   return(
@@ -29,7 +37,16 @@ function HomeStackScreen(){
         title="Conteúdos" />
       <HomeStack.Screen name="TelaCards" component={TelaCard}
       />
-      <HomeStack.Screen name="QuimicaOrganicaScreen" component={Organica} getId={({params}) => params.idItem}/>
+      <HomeStack.Screen name='QuimicaOrganica' component={Organica}/> 
+      <HomeStack.Screen name='EstruturaAtomica' component={EstruturaAtomica}/>
+      <HomeStack.Screen name='TabelaPeriodica' component={TabelaPeriodica}/>
+      <HomeStack.Screen name='LigacoesQuimicas' component={LigacoesQuimicas}/>
+      <HomeStack.Screen name='InteracoesIntermoleculares' component={InteracoesIntermoleculares}/>
+      <HomeStack.Screen name='EquilibrioQuimico' component={EquilibrioQuimico}/>
+      <HomeStack.Screen name='CineticaQuimica' component={CineticaQuimica}/>
+      <HomeStack.Screen name='Solucoesemisturas' component={Solucoesemisturas}/>
+      <HomeStack.Screen name='FuncoesInorganicas' component={FuncoesInorganicas}/>
+      <HomeStack.Screen name='SobreOAPP' component={SobreOAPP}/>
     </HomeStack.Navigator>
   );
 }

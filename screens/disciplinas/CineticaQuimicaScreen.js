@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 
-export default function QuimicaOrganica({route}) {
+export default function CineticaQuimica({route}) {
 
   return (
     <View>
@@ -14,7 +14,7 @@ export default function QuimicaOrganica({route}) {
     <ScrollView >
       <View>                  
       
-        <Text>{route.params.nome} organica screen</Text>
+        <Text>{route.params.nome} </Text>
                                     
        </View>
     </ScrollView>

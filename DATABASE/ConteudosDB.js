@@ -1,52 +1,62 @@
 const Conteudos = [
     {
         idItem: 1,
-        name: "Química orgânica",
+        name: "QuimicaOrganica",
+        title: "Química Orgânica",
         img: require('../assets/images/Organica.png')
     },
     {
         idItem: 2,
-        name: "Estrutura atômica",
+        name: "EstruturaAtomica",
+        title: "Química Orgânica",
         img: require('../assets/images/estatm.png')
     }, 
     {
         idItem: 3,
-        name: "Tabela periódica",
+        name: "TabelaPeriodica",
+        title: "Química Orgânica",
         img: require('../assets/images/tabelaperiodica.png')
     },
     {
         idItem: 4,
-        name: "Ligações Químicas",
+        name: "LigacoesQuimicas",
+        title: "Química Orgânica",
         img: require('../assets/images/ligacoesquimicas.png')
     },
     {
         idItem: 5,
-        name: "Interações intermoleculares",
+        name: "InteracoesIntermoleculares",
+        title: "Química Orgânica",
         img: require('../assets/images/intintermol.png')
     },
     {
         idItem: 6,
-        name: "Equilíbrio Químico",
+        name: "EquilibrioQuimico",
+        title: "Química Orgânica",
         img: require('../assets/images/eqquimico.png')
     },
     {
         idItem: 7,
-        name: "Cinética Química",
+        name: "CineticaQuimica",
+        title: "Química Orgânica",
         img: require('../assets/images/Cinetica.png')
     },
     {
         idItem: 8,
-        name: "Soluções e misturas",
+        name: "Solucoesemisturas",
+        title: "Química Orgânica",
         img: require('../assets/images/solemisturas.png')
     },
     {
         idItem: 9,
-        name: "Funções Inorgânicas",
+        name: "FuncoesInorganicas",
+        title: "Química Orgânica",
         img: require('../assets/images/qinorganica.png')
     },
     {
         idItem: 10,
-        name: "Sobre o APP",
+        name: "SobreOAPP",
+        title: "Química Orgânica",
         img: require('../assets/images/sobre.png')
     },
     

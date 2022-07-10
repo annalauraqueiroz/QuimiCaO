@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 
-export default function QuimicaOrganica({route}) {
+export default function EstruturaAtomica({route}) {
 
   return (
     <View>
