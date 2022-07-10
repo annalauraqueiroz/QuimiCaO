@@ -29,7 +29,7 @@ function HomeStackScreen(){
         title="Conteúdos" />
       <HomeStack.Screen name="TelaCards" component={TelaCard}
       />
-      <HomeStack.Screen name="Organica" component={Organica} getId={({params}) => params.idItem}/>
+      <HomeStack.Screen name="QuimicaOrganicaScreen" component={Organica} getId={({params}) => params.idItem}/>
     </HomeStack.Navigator>
   );
 }

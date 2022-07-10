@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 
-export default function TelaCard({route}) {
+export default function QuimicaOrganicaScreen({route}) {
 
   return (
     <View>
