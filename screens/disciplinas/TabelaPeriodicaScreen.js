@@ -2,10 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
 import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
-import { styles } from '../assets/styles/mainStyles.js';
+import { styles } from '../../assets/styles/mainStyles.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Card from '../components/Card.js'
+
 
 export default function TabelaPeriodica() {
 
