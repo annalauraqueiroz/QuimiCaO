@@ -1,9 +1,7 @@
 import React from 'react';
-import { StyleSheet, Image, View, Text} from 'react-native';
-import { NavigationContainer, TabActions } from '@react-navigation/native';
+import { StyleSheet, Image} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFonts, Bangers_400Regular } from '@expo-google-fonts/bangers';
 
 import HomeScreen from './screens/Home.js'
@@ -78,7 +76,7 @@ const styles = StyleSheet.create({
   ImgIcone1:{
     maxWidth: 175,
     maxHeight: 45,
-    borderRadius:12
+    borderRadius:12,
   },
   
   

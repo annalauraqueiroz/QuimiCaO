@@ -10,9 +10,9 @@ export const styles = StyleSheet.create({
     //alignItems: 'center',
     //borderLeftWidth: 20,
    // borderRightWidth: 20,
-   marginLeft:18,
-   marginRight: 18,
-    borderColor: '#1b3fa2',
+   marginLeft:21,
+   marginRight: 21,
+   borderColor: '#1b3fa2',
     
   },
   listacards:{
