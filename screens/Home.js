@@ -17,7 +17,7 @@ const UniqueCard = ({item, onPress})=> (
      style={styles.card}
      onPress={onPress}
    >
-       <Image style = {styles.ImgIcones} source={item.img}/>   
+       <Image style = {styles.ImgIcones} source= {item.img}/>   
        <Text style={styles.TextTitulo} adjustsFontSizeToFit= {true}>{item.title}</Text>
                  
  </TouchableOpacity>
