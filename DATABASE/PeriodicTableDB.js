@@ -5,7 +5,7 @@ const Elementos =[
         simbolo: "H",
         massaAtomica: 1.008,
         familia: '1A',
-        periodo: 1
+        periodo: 1,
     },
     {
         nAtomico: 2,
@@ -21,6 +21,14 @@ const Elementos =[
         simbolo: "Li",
         massaAtomica: 6.941,
         familia: '1A',
+        periodo: 2
+    },
+    {
+        nAtomico: 4,
+        nome: 'Berílio',
+        simbolo: "Be",
+        massaAtomica: 9.012,
+        familia: '2A',
         periodo: 2
     },
 ]

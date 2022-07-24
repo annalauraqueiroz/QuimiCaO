@@ -34,7 +34,7 @@ export default function HomeScreen({navigation}) {
       <UniqueCard
         item={item}
         onPress={() => navigation.navigate(item.name, {
-          id: item.idItem,
+          //id: item.idItem,
           nome: item.name,
         })}
         
@@ -47,13 +47,13 @@ export default function HomeScreen({navigation}) {
       <ImageBackground source={require('../assets/images/background.png')} resizeMode="cover" >
       <StatusBar style="dark" />
       
-        <FlatList contentContainerStyle={styles.listacards}
+      <FlatList contentContainerStyle={styles.listacards}
           numColumns={numColums}
           data={DATA}
+          //PQ quando eu chamo não declara o parametro que to enviando?
           renderItem={renderUniqueCard}
-          id={UniqueCard.id}
+          
         />
-    
       </ImageBackground>
       </View>
     </View>
