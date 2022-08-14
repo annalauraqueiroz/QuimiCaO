@@ -31,6 +31,7 @@ const Elementos =[
         familia: '2A',
         periodo: 2
     },
+  
 ]
 
 export default Elementos;
