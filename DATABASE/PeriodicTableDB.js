@@ -6,6 +6,7 @@ const Elementos =[
         massaAtomica: 1.008,
         familia: '1A',
         periodo: 1,
+        class: "Não metal"
     },
     {
         nAtomico: 2,
@@ -13,7 +14,8 @@ const Elementos =[
         simbolo: "He",
         massaAtomica: 4.0026,
         familia: '8A',
-        periodo: 1
+        periodo: 1,
+        class:'Gás nobre'
     },
     {
         nAtomico: 3,
@@ -21,7 +23,8 @@ const Elementos =[
         simbolo: "Li",
         massaAtomica: 6.941,
         familia: '1A',
-        periodo: 2
+        periodo: 2,
+        class: 'Metal alcalino'
     },
     {
         nAtomico: 4,
@@ -29,7 +32,8 @@ const Elementos =[
         simbolo: "Be",
         massaAtomica: 9.012,
         familia: '2A',
-        periodo: 2
+        periodo: 2,
+        class: 'Metal alcalino-terroso'
     },
     {
         nAtomico: 5, 
@@ -37,7 +41,8 @@ const Elementos =[
         simbolo: "B",
         massaAtomica: 10.81,
         familia: '3A',
-        periodo: 2
+        periodo: 2,
+        class:'Semimetal'
     },
 {
         nAtomico: 6, 
@@ -45,7 +50,8 @@ const Elementos =[
         simbolo: "C",
         massaAtomica: 12.011,
         familia: '4A',
-        periodo: 2
+        periodo: 2,
+        class:'Não metal'
     },
     {
         nAtomico: 7, 
@@ -53,7 +59,8 @@ const Elementos =[
         simbolo: "N",
         massaAtomica: 14.007,
         familia: '5A',
-        periodo: 2
+        periodo: 2,
+        class: "Não metal"
     },
     {
         nAtomico: 8, 
@@ -61,7 +68,8 @@ const Elementos =[
         simbolo: "O",
         massaAtomica: 15.999,
         familia: '6A',
-        periodo: 2
+        periodo: 2,
+        class: "Não metal"
     },
     {
         nAtomico: 9, 
@@ -69,7 +77,8 @@ const Elementos =[
         simbolo: "F",
         massaAtomica: 18.998,
         familia: '7A',
-        periodo: 2
+        periodo: 2,
+        class: "Halógeno"
     },
     {
         nAtomico: 10, 
@@ -77,7 +86,8 @@ const Elementos =[
         simbolo: "Ne",
         massaAtomica: 20.180,
         familia: '8A',
-        periodo: 2
+        periodo: 2,
+        class:'Gás nobre'
     },
     {
         nAtomico: 11, 
@@ -85,7 +95,8 @@ const Elementos =[
         simbolo: "Na",
         massaAtomica: 27.990,
         familia: '1A',
-        periodo: 3
+        periodo: 3,
+        class: 'Metal alcalino'
     },
     {
         nAtomico: 12, 
@@ -93,7 +104,8 @@ const Elementos =[
         simbolo: "Mg",
         massaAtomica: 24.305,
         familia: '2A',
-        periodo: 3
+        periodo: 3,
+        class: 'Metal alcalino-terroso'
     },
     {
         nAtomico: 13, 
@@ -101,7 +113,8 @@ const Elementos =[
         simbolo: "Al",
         massaAtomica: 26.892,
         familia: '3A',
-        periodo: 3
+        periodo: 3,
+        class:'Metal de pós-transição'
     },
     {
         nAtomico: 14, 
@@ -109,7 +122,8 @@ const Elementos =[
         simbolo: "Si",
         massaAtomica: 28.085,
         familia: '4A',
-        periodo: 3
+        periodo: 3,
+        class:'Semimetal'
     },
     {
         nAtomico: 15, 
@@ -117,15 +131,17 @@ const Elementos =[
         simbolo: "P",
         massaAtomica: 30.974,
         familia: '5A',
-        periodo: 3
+        periodo: 3,
+        class:'Não metal'
     },
     {
         nAtomico: 16, 
         nome: 'Enxofre',
-        simbolo: "B",
+        simbolo: "S",
         massaAtomica: 32.06,
         familia: '6A',
-        periodo: 3
+        periodo: 3,
+        class:'Não metal'
     },
     {
         nAtomico: 17, 
@@ -133,7 +149,8 @@ const Elementos =[
         simbolo: "Cl",
         massaAtomica: 35.45,
         familia: '7A',
-        periodo: 3
+        periodo: 3,
+        class: "Halógeno"
     },
     {
         nAtomico: 18, 
@@ -141,7 +158,8 @@ const Elementos =[
         simbolo: "Ar",
         massaAtomica: 39.948,
         familia: '8A',
-        periodo: 3
+        periodo: 3,
+        class:'Gás nobre'
     },
     {
         nAtomico: 19, 
@@ -149,7 +167,8 @@ const Elementos =[
         simbolo: "K",
         massaAtomica: 39.098,
         familia: '1A',
-        periodo: 4
+        periodo: 4,
+        class: 'Metal alcalino'
     },
     {
         nAtomico: 20, 
@@ -157,7 +176,8 @@ const Elementos =[
         simbolo: "Ca",
         massaAtomica: 40.078,
         familia: '2A',
-        periodo: 4
+        periodo: 4,
+        class: 'Metal alcalino-terroso'
     },
     {
         nAtomico: 21, 
@@ -165,7 +185,8 @@ const Elementos =[
         simbolo: "Sc",
         massaAtomica: 44.956,
         familia: '3B',
-        periodo: 4
+        periodo: 4,
+        class: 'Metal de transição'
     },
     {
         nAtomico: 22, 
@@ -173,15 +194,17 @@ const Elementos =[
         simbolo: "Ti",
         massaAtomica: 47.867,
         familia: '4B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 23, 
         nome: 'Vanádio',
-        simbolo: "Va",
+        simbolo: "V",
         massaAtomica: 50.942,
         familia: '5B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 24, 
@@ -189,15 +212,17 @@ const Elementos =[
         simbolo: "Cr",
         massaAtomica: 51.996,
         familia: '6B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 25, 
         nome: 'Manganês',
-        simbolo: "Mg",
+        simbolo: "Mn",
         massaAtomica: 54.938,
         familia: '7B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 26, 
@@ -205,7 +230,8 @@ const Elementos =[
         simbolo: "Fe",
         massaAtomica: 55.845,
         familia: '8B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 27, 
@@ -213,7 +239,8 @@ const Elementos =[
         simbolo: "Co",
         massaAtomica: 58.933,
         familia: '8B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 28, 
@@ -221,7 +248,8 @@ const Elementos =[
         simbolo: "Ni",
         massaAtomica: 58.693,
         familia: '8B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 29, 
@@ -229,7 +257,8 @@ const Elementos =[
         simbolo: "Cu",
         massaAtomica: 63.546,
         familia: '1B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 30, 
@@ -237,7 +266,8 @@ const Elementos =[
         simbolo: "Zn",
         massaAtomica: 65.38,
         familia: '2B',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de transição'
     },
     {
         nAtomico: 31, 
@@ -245,7 +275,8 @@ const Elementos =[
         simbolo: "Ga",
         massaAtomica: 69.723,
         familia: '3A',
-        periodo: 4
+        periodo: 4,
+        class:'Metal de pós-transição'
     },
     {
         nAtomico: 32, 
@@ -253,15 +284,17 @@ const Elementos =[
         simbolo: "Ge",
         massaAtomica: 72.630,
         familia: '4A',
-        periodo: 4
+        periodo: 4,
+        class:'Semimetal'
     },
     {
         nAtomico: 33, 
         nome: 'Arsênio',
-        simbolo: "Ar",
+        simbolo: "As",
         massaAtomica: 74.922,
         familia: '5A',
-        periodo: 4
+        periodo: 4,
+        class:'Semimetal'
     },
     {
         nAtomico: 34, 
@@ -269,7 +302,8 @@ const Elementos =[
         simbolo: "Se",
         massaAtomica: 78.971,
         familia: '6A',
-        periodo: 4
+        periodo: 4,
+        class:'Não metal'
     },
     {
         nAtomico: 35, 
@@ -277,7 +311,8 @@ const Elementos =[
         simbolo: "Br",
         massaAtomica: 79.904,
         familia: '7A',
-        periodo: 4
+        periodo: 4,
+        class: "Halógeno"
     },
     {
         nAtomico: 36, 
@@ -285,7 +320,8 @@ const Elementos =[
         simbolo: "Kr",
         massaAtomica: 83.798,
         familia: '8A',
-        periodo: 4
+        periodo: 4,
+        class:'Gás nobre'
     },
     {
         nAtomico: 37, 
@@ -293,7 +329,8 @@ const Elementos =[
         simbolo: "Rb",
         massaAtomica: 85.468,
         familia: '1A',
-        periodo: 5
+        periodo: 5,
+        class: 'Metal alcalino'
     },
     {
         nAtomico: 38, 
@@ -301,7 +338,8 @@ const Elementos =[
         simbolo: "Sr",
         massaAtomica: 87.62,
         familia: '2A',
-        periodo: 5
+        periodo: 5,
+        class: 'Metal alcalino-terroso'
     },
     {
         nAtomico: 39, 
@@ -309,7 +347,8 @@ const Elementos =[
         simbolo: "Y",
         massaAtomica: 88.906,
         familia: '3B',
-        periodo: 5
+        periodo: 5,
+        class: 'Metal de transição'
     },
     {
         nAtomico: 40, 
@@ -317,7 +356,8 @@ const Elementos =[
         simbolo: "Zr",
         massaAtomica: 91.224,
         familia: '4B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 41, 
@@ -325,7 +365,8 @@ const Elementos =[
         simbolo: "Nb",
         massaAtomica: 92.906,
         familia: '5B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 42, 
@@ -333,7 +374,8 @@ const Elementos =[
         simbolo: "Mo",
         massaAtomica: 95.95,
         familia: '6B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico:43, 
@@ -341,7 +383,8 @@ const Elementos =[
         simbolo: "Tc",
         massaAtomica: 98,
         familia: '7B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 44, 
@@ -349,7 +392,8 @@ const Elementos =[
         simbolo: "Ru",
         massaAtomica: 101.07,
         familia: '8B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 45, 
@@ -357,7 +401,8 @@ const Elementos =[
         simbolo: "Rh",
         massaAtomica: 102.91,
         familia: '8B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 46, 
@@ -365,7 +410,8 @@ const Elementos =[
         simbolo: "Pd",
         massaAtomica: 105.42,
         familia: '8B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 47, 
@@ -373,15 +419,17 @@ const Elementos =[
         simbolo: "Ag",
         massaAtomica: 107.87,
         familia: '1B',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 48, 
         nome: 'Cádmio',
         simbolo: "Cd",
         massaAtomica: 112.41,
-        familia: 'B',
-        periodo: 5
+        familia: '2B',
+        periodo: 5,
+        class:'Metal de transição'
     },
     {
         nAtomico: 49, 
@@ -389,7 +437,8 @@ const Elementos =[
         simbolo: "In",
         massaAtomica: 114.82,
         familia: '3A',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de pós-transição'
     },
     {
         nAtomico: 50, 
@@ -397,7 +446,8 @@ const Elementos =[
         simbolo: "Sn",
         massaAtomica: 118.71,
         familia: '4A',
-        periodo: 5
+        periodo: 5,
+        class:'Metal de pós-transição'
     },
     {
         nAtomico: 51, 
@@ -405,7 +455,8 @@ const Elementos =[
         simbolo: "Sb",
         massaAtomica: 121.76,
         familia: '5A',
-        periodo: 5
+        periodo: 5,
+        class:'Semimetal'
     },
     {
         nAtomico: 52, 
@@ -413,7 +464,8 @@ const Elementos =[
         simbolo: "Te",
         massaAtomica: 127.60,
         familia: '6A',
-        periodo: 5
+        periodo: 5,
+        class:'Semimetal'
     },
     {
         nAtomico: 53, 
@@ -421,7 +473,8 @@ const Elementos =[
         simbolo: "I",
         massaAtomica: 126.90,
         familia: '7A',
-        periodo: 5
+        periodo: 5,
+        class: "Halógeno"
     },
     {
         nAtomico: 54, 
@@ -429,7 +482,8 @@ const Elementos =[
         simbolo: "Te",
         massaAtomica: 131.29,
         familia: '8A',
-        periodo: 5
+        periodo: 5,
+        class:'Gás nobre'
     },
     {
         nAtomico: 55, 
@@ -437,7 +491,8 @@ const Elementos =[
         simbolo: "Ce",
         massaAtomica: 132.91,
         familia: '1A',
-        periodo: 6
+        periodo: 6,
+        class: 'Metal alcalino'
     },
     {
         nAtomico: 56, 
@@ -445,7 +500,8 @@ const Elementos =[
         simbolo: "Ba",
         massaAtomica: 137.33,
         familia: '2A',
-        periodo: 6
+        periodo: 6,
+        class: 'Metal alcalino-terroso'
     },
 {
         nAtomico: 72, 
@@ -453,7 +509,8 @@ const Elementos =[
         simbolo: "Hf",
         massaAtomica: 178.49,
         familia: '4B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
     {
         nAtomico: 73, 
@@ -461,7 +518,8 @@ const Elementos =[
         simbolo: "Ta",
         massaAtomica: 180.95,
         familia: '5B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
     {
         nAtomico: 74, 
@@ -469,7 +527,8 @@ const Elementos =[
         simbolo: "W",
         massaAtomica: 183.84,
         familia: '6B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
     {
         nAtomico: 75, 
@@ -477,7 +536,8 @@ const Elementos =[
         simbolo: "Re",
         massaAtomica: 186.21,
         familia: '7B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
     {
         nAtomico: 76, 
@@ -485,7 +545,8 @@ const Elementos =[
         simbolo: "Os",
         massaAtomica: 190.23,
         familia: '8B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
 {
         nAtomico: 77, 
@@ -493,7 +554,8 @@ const Elementos =[
         simbolo: "Ir",
         massaAtomica: 192.22,
         familia: '8B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
 {
         nAtomico: 78, 
@@ -501,7 +563,8 @@ const Elementos =[
         simbolo: "Pt",
         massaAtomica: 195.08,
         familia: '8B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
 {
         nAtomico: 79, 
@@ -509,7 +572,8 @@ const Elementos =[
         simbolo: "Au",
         massaAtomica: 196.97,
         familia: '1B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
 {
         nAtomico: 80, 
@@ -517,7 +581,8 @@ const Elementos =[
         simbolo: "Hg",
         massaAtomica: 200.59,
         familia: '2B',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de transição'
     },
 {
         nAtomico: 81, 
@@ -525,7 +590,8 @@ const Elementos =[
         simbolo: "Tl",
         massaAtomica: 204.38,
         familia: '3A',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 82, 
@@ -533,7 +599,8 @@ const Elementos =[
         simbolo: "Pb",
         massaAtomica: 207.2,
         familia: '4A',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 83, 
@@ -541,7 +608,8 @@ const Elementos =[
         simbolo: "Bi",
         massaAtomica: 208.98,
         familia: '5A',
-        periodo: 6
+        periodo: 6,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 84, 
@@ -549,7 +617,8 @@ const Elementos =[
         simbolo: "Po",
         massaAtomica: 209,
         familia: '6A',
-        periodo: 6
+        periodo: 6,
+        class:'Semimetal'
     },
 {
         nAtomico: 85, 
@@ -557,7 +626,8 @@ const Elementos =[
         simbolo: "At",
         massaAtomica: 210,
         familia: '7A',
-        periodo: 6
+        periodo: 6,
+        class:'Halógeno'
     },
 {
         nAtomico: 86, 
@@ -565,7 +635,8 @@ const Elementos =[
         simbolo: "Rn",
         massaAtomica: 222,
         familia: '8A',
-        periodo: 6
+        periodo: 6,
+        class:'Gás nobre'
     },
 {
         nAtomico: 87, 
@@ -573,7 +644,8 @@ const Elementos =[
         simbolo: "Fr",
         massaAtomica: 223,
         familia: '1A',
-        periodo: 7
+        periodo: 7,
+        class: 'Metal alcalino'
     },
 {
         nAtomico: 88, 
@@ -581,47 +653,53 @@ const Elementos =[
         simbolo: "Ra",
         massaAtomica: 226,
         familia: '2A',
-        periodo: 7
+        periodo: 7,
+        class: 'Metal alcalino-terroso'
     },
 {
         nAtomico: 104, 
         nome: 'Rutherfódio',
         simbolo: "Rf",
         massaAtomica: 267,
-        familia: '3B',
-        periodo: 7
+        familia: '4B',
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 105, 
         nome: 'Dúbnio',
         simbolo: "Db",
         massaAtomica: 268,
-        familia: '4B',
-        periodo: 7
+        familia: '5B',
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 106, 
         nome: 'Seabórgio',
         simbolo: "Sg",
         massaAtomica: 269,
-        familia: '5B',
-        periodo: 7
+        familia: '6B',
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 107, 
         nome: 'Bóhrio',
         simbolo: "Bh",
         massaAtomica: 270,
-        familia: '6B',
-        periodo: 7
+        familia: '7B',
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 108, 
         nome: 'Hássio',
         simbolo: "Hs",
         massaAtomica: 269,
-        familia: '7B',
-        periodo: 7
+        familia: '8B',
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 109, 
@@ -629,7 +707,8 @@ const Elementos =[
         simbolo: "Mt",
         massaAtomica: 278,
         familia: '8B',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 110, 
@@ -637,15 +716,17 @@ const Elementos =[
         simbolo: "Ds",
         massaAtomica: 281,
         familia: '8B',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 111, 
         nome: 'Roentgênio',
         simbolo: "Rg",
         massaAtomica: 281,
-        familia: '3B',
-        periodo: 7
+        familia: '1B',
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 112, 
@@ -653,7 +734,8 @@ const Elementos =[
         simbolo: "Cn",
         massaAtomica: 285,
         familia: '2B',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de transição'
     },
 {
         nAtomico: 113, 
@@ -661,7 +743,8 @@ const Elementos =[
         simbolo: "Nh",
         massaAtomica: 286,
         familia: '3A',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 114, 
@@ -669,7 +752,8 @@ const Elementos =[
         simbolo: "Fl",
         massaAtomica: 289,
         familia: '4A',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 115, 
@@ -677,7 +761,8 @@ const Elementos =[
         simbolo: "Mc",
         massaAtomica: 288,
         familia: '5A',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 116, 
@@ -685,7 +770,8 @@ const Elementos =[
         simbolo: "Lv",
         massaAtomica: 293,
         familia: '6A',
-        periodo: 7
+        periodo: 7,
+        class:'Metal de pós-transição'
     },
 {
         nAtomico: 117, 
@@ -693,7 +779,8 @@ const Elementos =[
         simbolo: "Ts",
         massaAtomica: 294,
         familia: '7A',
-        periodo: 7
+        periodo: 7,
+        class:'Halógeno'
     },
 {
         nAtomico: 118, 
@@ -701,7 +788,8 @@ const Elementos =[
         simbolo: "Og",
         massaAtomica: 294,
         familia: '8A',
-        periodo: 7
+        periodo: 7,
+        class:'Gás nobre'
     },
 {
         nAtomico: 57, 
@@ -709,7 +797,8 @@ const Elementos =[
         simbolo: "La",
         massaAtomica: 138.91,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 58, 
@@ -717,7 +806,8 @@ const Elementos =[
         simbolo: "Ce",
         massaAtomica: 140.12,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 59, 
@@ -725,7 +815,8 @@ const Elementos =[
         simbolo: "Pr",
         massaAtomica: 140.91,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 60, 
@@ -733,7 +824,8 @@ const Elementos =[
         simbolo: "Nd",
         massaAtomica: 144.24,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 61, 
@@ -741,7 +833,8 @@ const Elementos =[
         simbolo: "Pm",
         massaAtomica: 145,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 62, 
@@ -749,7 +842,8 @@ const Elementos =[
         simbolo: "Sm",
         massaAtomica: 150.36,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 63, 
@@ -757,7 +851,8 @@ const Elementos =[
         simbolo: "Eu",
         massaAtomica: 151.96,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 64, 
@@ -765,7 +860,8 @@ const Elementos =[
         simbolo: "Gd",
         massaAtomica: 157.25,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 65, 
@@ -773,7 +869,8 @@ const Elementos =[
         simbolo: "Tb",
         massaAtomica: 154.93,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 66, 
@@ -781,7 +878,8 @@ const Elementos =[
         simbolo: "Dy",
         massaAtomica: 162.50,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 67, 
@@ -789,7 +887,8 @@ const Elementos =[
         simbolo: "Ho",
         massaAtomica: 164.93,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 68, 
@@ -797,7 +896,8 @@ const Elementos =[
         simbolo: "Er",
         massaAtomica: 167.24,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 69, 
@@ -805,7 +905,8 @@ const Elementos =[
         simbolo: "Tm",
         massaAtomica: 168.93,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 70, 
@@ -813,7 +914,8 @@ const Elementos =[
         simbolo: "Yb",
         massaAtomica: 173.05,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 71, 
@@ -821,7 +923,8 @@ const Elementos =[
         simbolo: "Lu",
         massaAtomica: 174.97,
         familia: '3B',
-        periodo: 6
+        periodo: 6,
+        class:'Lantanídeos'
     },
 {
         nAtomico: 89, 
@@ -829,7 +932,8 @@ const Elementos =[
         simbolo: "Ac",
         massaAtomica: 227,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 90, 
@@ -837,7 +941,8 @@ const Elementos =[
         simbolo: "Th",
         massaAtomica: 232.04,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 91, 
@@ -845,7 +950,8 @@ const Elementos =[
         simbolo: "Pa",
         massaAtomica: 231.04,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 92, 
@@ -853,7 +959,8 @@ const Elementos =[
         simbolo: "U",
         massaAtomica: 238.03,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 93, 
@@ -861,7 +968,8 @@ const Elementos =[
         simbolo: "Np",
         massaAtomica: 237,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 94, 
@@ -869,7 +977,8 @@ const Elementos =[
         simbolo: "Pu",
         massaAtomica: 244,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 95, 
@@ -877,7 +986,8 @@ const Elementos =[
         simbolo: "Am",
         massaAtomica: 243,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 96, 
@@ -885,7 +995,8 @@ const Elementos =[
         simbolo: "Cm",
         massaAtomica: 247,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
     {
         nAtomico: 97, 
@@ -893,7 +1004,8 @@ const Elementos =[
         simbolo: "Bk",
         massaAtomica: 247,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
     {
         nAtomico: 98, 
@@ -901,7 +1013,8 @@ const Elementos =[
         simbolo: "Cf",
         massaAtomica: 251,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
     {
         nAtomico: 99, 
@@ -909,7 +1022,8 @@ const Elementos =[
         simbolo: "Es",
         massaAtomica: 252,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
     {
         nAtomico: 100, 
@@ -917,7 +1031,8 @@ const Elementos =[
         simbolo: "Fm",
         massaAtomica: 257,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 {
         nAtomico: 101, 
@@ -925,7 +1040,8 @@ const Elementos =[
         simbolo: "Md",
         massaAtomica: 258,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
     {
         nAtomico: 102, 
@@ -933,7 +1049,8 @@ const Elementos =[
         simbolo: "No",
         massaAtomica: 259,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
     {
         nAtomico: 103, 
@@ -941,7 +1058,8 @@ const Elementos =[
         simbolo: "Lr",
         massaAtomica: 262,
         familia: '3B',
-        periodo: 7
+        periodo: 7,
+        class:'Actinídio'
     },
 
 ]
