@@ -13,7 +13,7 @@ export default function InfoElemento({route}) {
     <StatusBar style="dark" />
     <View>                  
       
-        <Text style={styles.TextTitulo}>e.params.elemento.nome}</Text>
+        <Text style={styles.TextTitulo}>e.params.elemento.nome</Text>
                                     
     </View>
     </View>

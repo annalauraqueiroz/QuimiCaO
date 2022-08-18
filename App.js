@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Image} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts, Bangers_400Regular } from '@expo-google-fonts/bangers';
 
@@ -8,6 +8,7 @@ import HomeScreen from './screens/Home.js'
 import TelaCard from './screens/TelaCards.js'
 import Organica from './screens/disciplinas/QuimicaOrganicaScreen.js'
 import TabelaPeriodica from './screens/TabelaPeriodicaScreen.js';
+import InfoElemento from './screens/ModalScreen.js';
 
 function LogoTitle(){
   return(
@@ -31,6 +32,14 @@ function HomeStackScreen(){
       <HomeStack.Screen name="TelaCards" component={TelaCard}/>
       <HomeStack.Screen name="QuimicaOrganica" component={Organica}/>
       <HomeStack.Screen name='TabelaPeriodica' component={TabelaPeriodica}/>
+      <HomeStack.Group
+        screenOptions={({navigation})=>({
+          presentation: 'modal',
+
+        })}
+      >
+        <HomeStack.Screen name="InfoElemento" component={InfoElemento}/>
+      </HomeStack.Group>
     </HomeStack.Navigator>
   );
 }
@@ -44,7 +53,7 @@ export default function App() {
   if (!fontsLoaded) 
     return null;
   return (
-    <NavigationContainer initialRouteName="Home" >
+    <NavigationContainer initialRouteName="Home">
       <HomeStackScreen />
     </NavigationContainer>
     
