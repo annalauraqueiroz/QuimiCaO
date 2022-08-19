@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {Component, UseState} from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { Text, View, Image, FlatList, ScrollView, TouchableOpacity} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { periodicTableStyles } from '../assets/styles/periodicTableStyles.js';
@@ -34,15 +35,18 @@ const bgColor = (props) => {
     }
   }
 
+
 class ListaElementos extends Component{
   render(){
+    const {navigation} = this.props;
     if(this.props.familia != "3B"){
       return(
         Elementos.map((elemento) => {
           if(elemento.familia == this.props.familia){
             return(
               <View style={periodicTableStyles.coluna} key={elemento.nAtomico}> 
-              <TouchableOpacity style={[periodicTableStyles.cardElemento,{backgroundColor:bgColor(elemento)}]} onPress={() => {this.props.navigation.navigate(InfoElemento, elemento)}}>
+              <TouchableOpacity style={[periodicTableStyles.cardElemento,{backgroundColor:bgColor(elemento)}]} 
+                onPress={()=> navigation.navigate('InfoElemento', {elemento: elemento})}>
                   <Text>{elemento.simbolo}</Text>
                   <Text>{elemento.nAtomico}</Text>
               </TouchableOpacity>
@@ -72,14 +76,16 @@ class ListaElementos extends Component{
   }
 }
 
-//const teste = withNavigation(ListaElementos);
-
-export default function TabelaPeriodica({navigation}) {
+export default function TabelaPeriodica() {
+  const navigation = useNavigation();
+  
 
   return (
     <View style={periodicTableStyles.container}>
       <StatusBar style="dark" />
       
+      
+
       <ScrollView horizontal={true} alwaysBounceHorizontal={true} maximumZoomScale= {2.0}>
         <View style={periodicTableStyles.sviewContainer}>
           
@@ -90,6 +96,7 @@ export default function TabelaPeriodica({navigation}) {
           <ListaElementos familia="2A" navigation={navigation}/>
         </View>
         <View>
+          
           <View style={periodicTableStyles.coluna}> 
         
             <View style={[periodicTableStyles.cardElemento,{backgroundColor:bgColor(Elementos[20])}]} >

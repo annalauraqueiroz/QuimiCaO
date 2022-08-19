@@ -33,7 +33,7 @@ function HomeStackScreen(){
       <HomeStack.Screen name="QuimicaOrganica" component={Organica}/>
       <HomeStack.Screen name='TabelaPeriodica' component={TabelaPeriodica}/>
       <HomeStack.Group
-        screenOptions={({navigation})=>({
+        screenOptions={()=>({
           presentation: 'modal',
 
         })}

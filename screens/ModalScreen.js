@@ -6,15 +6,16 @@ import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNat
 import { styles } from '../assets/styles/conteudoStyles.js';
 import ConteudosDisciplinas from '../DATABASE/ConteudoDisciplinaDB.js'
 
-export default function InfoElemento({route}) {
+export default function InfoElemento(props) {
 
+  
   return (
     <View style={styles.container}>
     <StatusBar style="dark" />
     <View>                  
       
-        <Text style={styles.TextTitulo}>e.params.elemento.nome</Text>
-                                    
+    <Text style={styles.TextTitulo}> {props.route.params.elemento.nAtomico}</Text>  
+    <Text style={styles.TextTitulo}> {props.route.params.elemento.nome}</Text>                       
     </View>
     </View>
   );
