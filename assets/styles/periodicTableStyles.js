@@ -5,16 +5,17 @@ export const periodicTableStyles = StyleSheet.create({
     //borderColor: '#1b3fa2',
     paddingTop: 10,
     paddingRight:5,
-    
-    //backgroundColor:'#04c6cf'
+    flex:1,
+    marginBottom:50,
+    flexDirection:'column',
+    justifyContent:'flex-end',
+    backgroundColor:'#FFFDF0'
   },
   sviewContainer:{
-   flexGrow: 1,
-   height: 500,
+   height: '100%',
    flexDirection:'row',
-   
    alignItems:'flex-end',
-   
+
   },
   cardElemento: {
         
@@ -37,22 +38,61 @@ export const periodicTableStyles = StyleSheet.create({
         maxWidth: 3*52,
         flexWrap: 'wrap',
         flexDirection: 'row',
-        
+        justifyContent:'center'
       },
       gruposLAC:{
-        paddingTop: 30
+        paddingTop: 30,
+        flexDirection: 'column',
+        flexWrap:'nowrap',
+        alignItems:'space-around',
       },
       flac: {
         
+        alignItems:'center',
         flexDirection: 'row',
-      },
-      txtGruposLAC:{
-        width: 2*52,
       },
       coluna: {
         flexDirection: 'column',
         flexWrap: 'wrap',
 
+      },
+      containerInfoTabela:{
+        alignContent: 'center',
+        flexDirection:'row',
+
+      },
+      infoTabela:{
+
+      },
+      label: {
+        flexWrap:'wrap',
+        width:'4%',
+        justifyContent:'space-around',
+        marginLeft:5
+
+      },
+      txtLabel: {
+        fontFamily:  'Zing',
+        color:'#00858B',
+      },
+      txtLabelGroup: {
+        fontFamily:  'Zing',
+        color:'#00858B',
+        textAlign:'center'
+      },
+      containerGrupos:{
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:'center',
+        flexWrap:'wrap',
+        marginBottom:40,
+      },
+      cardGrupo: {
+        width: 25,
+        height: 25,
+        margin: 1,
+        borderRadius: 7,
+        
       },
       
 })
