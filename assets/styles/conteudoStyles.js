@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
         color: '#1b3fa2',
         fontFamily:  'Zing',
         paddingTop: 40,
-        
       },
       TextSubtitulo:{
         fontSize: 30,
@@ -18,26 +17,12 @@ export const styles = StyleSheet.create({
         fontFamily:  'Zing',
         paddingTop: 20,
       },
-      container: {
-        //flex: 1,
-        //backgroundColor: '#F8F8FF',
-        //justifyContent: 'center',
-       //flexDirection: 'column',
-        //marginTop: 100,
-        //alignItems: 'center',
-        //borderLeftWidth: 20,
-       // borderRightWidth: 20,
-        
-      },
       family:{
         alignItems: 'center',
-        
-        
       },
       row1:{
         paddingTop: 35,
         alignItems: 'center',
-        
         justifyContent: 'space-around'
       },
       row2:{
@@ -86,31 +71,14 @@ export const styles = StyleSheet.create({
         fontSize: 40,
       },
       switch: {
-        //flex: 1,
-        //backgroundColor: '#F8F8FF',
-        //justifyContent: 'center',
        flexDirection: 'row',
-        //marginTop: 100,
-        //alignItems: 'center',
-        //borderLeftWidth: 20,
-       // borderRightWidth: 20,
-        
       },
       loading: {
-        //backgroundColor: '#F8F8FF',
-        //justifyContent: 'center',
-       //flexDirection: 'column',
-        //marginTop: 100,
-        //alignItems: 'center',
-        //borderLeftWidth: 20,
-       // borderRightWidth: 20,
-       marginLeft:21,
-       marginRight: 21,
-       borderColor: '#1b3fa2',
-        
+       alignContent:'center',
+       width: '100%',
+       height:'100%'
       },
       circle:{
-       // backgroundColor: '#04c6cf',
         width: 100,
         height: 100,
         margin: 10,
@@ -118,7 +86,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
       },
       circle2:{
-        // backgroundColor: '#04c6cf',
          width: 90,
          height: 90,
          margin: 10,

@@ -48,8 +48,9 @@ export default class ListaElementos extends Component{
                 <TouchableOpacity style={[periodicTableStyles.cardElemento,{backgroundColor:bgColor(elemento)}]} 
                   onPress={()=> {
                   navigation.navigate('InfoElemento', {elemento: elemento})}}>
-                    <Text>{elemento.simbolo}</Text>
-                    <Text>{elemento.nAtomico}</Text>
+                    <Text style={periodicTableStyles.txtNatm}>{elemento.nAtomico}</Text>
+                    <Text style={periodicTableStyles.txtSymbol}>{elemento.simbolo}</Text>
+                    
                 </TouchableOpacity>
                 </View>
               )}
@@ -66,8 +67,8 @@ export default class ListaElementos extends Component{
                 <TouchableOpacity style={[periodicTableStyles.cardElemento,{backgroundColor:bgColor(elemento)}]} 
                   onPress={()=> {
                   navigation.navigate('InfoElemento', {elemento: elemento})}}>
-                  <Text>{elemento.simbolo}</Text>
-                  <Text>{elemento.nAtomico}</Text>
+                  <Text style={periodicTableStyles.txtNatm}>{elemento.nAtomico}</Text>
+                  <Text style={periodicTableStyles.txtSymbol}>{elemento.simbolo}</Text>
                 </TouchableOpacity>
                 
                 </View>
