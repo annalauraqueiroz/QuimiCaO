@@ -1,22 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Text, View, TouchableOpacity, ImageBackground, FlatList } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { styles } from '../assets/styles/mainStyles.js';
+import { disciplinaStyles } from '../assets/styles/disciplinasStyles';
 
 import Dados from '../DATABASE/SubtopicosDB.js'
 
 const UniqueCard = ({ item, onPress }) => (
-  <View style={styles.cardSubtopicos}>
+  <View style={disciplinaStyles.cardSubtopicos}>
     <TouchableOpacity
-      style={styles.cardSubtopicos}
+      style={disciplinaStyles.cardSubtopicos}
       onPress={onPress}>
-      <Text style={styles.txtTituloSubtopico}>{item.titulo}</Text>
+      <Text style={disciplinaStyles.txtTituloSubtopico}>{item.titulo}</Text>
     </TouchableOpacity>
   </View>
 );
 
 export default function Disciplina({ navigation, route }) {
+  //tentar com find 
   const DATA = Dados.filter((dado) => {
     if (dado.disciplina == route.params.nome) {
       return dado;
@@ -27,27 +26,25 @@ export default function Disciplina({ navigation, route }) {
     return (
       <UniqueCard
         item={item}
-        onPress={() => navigation.navigate('CardDisciplinas', {idDado: item.id, item: item})} />
+        onPress={() => navigation.navigate('CardDisciplinas', {item: item})} />
     )
   }
   return (
     <View>
-      <SafeAreaView>
         <View>
           <View style={{ backgroundColor: '#227fbb' }}>
-            <View style={styles.container}>
-              <ImageBackground source={require('../assets/images/background.png')} resizeMode="cover">
-                <View style={styles.listacards}>
-                  <Text style={styles.txtTituloDisciplina}>{route.params.tituloDisciplina}</Text>
-                  <FlatList contentContainerStyle={styles.listacards}
+            <View style={disciplinaStyles.container}>
+            <ImageBackground source={require('../assets/images/background.png')} resizeMode="stretch">
+                <View style={disciplinaStyles.listacards}>
+                  <Text style={disciplinaStyles.txtTituloDisciplina}>{route.params.tituloDisciplina}</Text>
+                  <FlatList contentContainerStyle={disciplinaStyles.listacards}
                     data={DATA}
-                    renderItem={renderCard} />
+                    renderItem={renderCard}/>
                 </View>
-              </ImageBackground>
+                </ImageBackground>
             </View>
           </View>
         </View>
-      </SafeAreaView>
     </View>
   );
 }

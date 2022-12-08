@@ -22,15 +22,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around'
   },
-  cardSubtopicos:{
-    backgroundColor: '#04c6cf',
-    width: 400,
-    height: 100,
-    margin: 15,
-    borderRadius: 7,
-    alignItems: 'center',
-    justifyContent: 'space-around'
-  },
+  
   ImgIcones:{
     maxWidth: 90,
     maxHeight: 90

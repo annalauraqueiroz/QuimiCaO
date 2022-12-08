@@ -41,7 +41,57 @@ const Subtopicos = [
                     idItem: 4,
                     titulo: "Alcóois",
                     img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
-                }
+                },
+                {
+                    idItem: 5,
+                    titulo: "Fenol",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 6,
+                    titulo: "Éster",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 7,
+                    titulo: "Éter",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 8,
+                    titulo: "Ácido Carboxílico",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 9,
+                    titulo: "Cetona",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 10,
+                    titulo: "Aldeído",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 11,
+                    titulo: "Amida",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 12,
+                    titulo: "Amina",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 13,
+                    titulo: "Anidrido",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
+                {
+                    idItem: 14,
+                    titulo: "Haletos",
+                    img: require('../assets/images/Organica/FuncoesOrganicas/alcool.png')
+                },
                 ]
             },
         

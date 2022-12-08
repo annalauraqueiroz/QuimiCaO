@@ -7,7 +7,8 @@ import HomeScreen from '../../screens/Home.js'
 import Disciplina from '../../screens/DisciplinaScreen.js'
 import TabelaPeriodica from '../../screens/TabelaPeriodicaScreen.js';
 import InfoElemento from '../../screens/ModalScreen.js';
-import CardDisciplinas from '../../components/cardDisciplinas.js'
+import CardDisciplinas from '../../components/cardDisciplinas.js';
+import FuncaoOrganicaScreen from '../../screens/disciplinas/FuncaoOrganicaScreen.js';
 
 export default function MainRoutes() {
 
@@ -30,19 +31,6 @@ export default function MainRoutes() {
   const HomeStack = createNativeStackNavigator();
   const DisciplinasStack = createNativeStackNavigator();
 
-  function DisciplinasStackScreen() {
-    return (
-      <DisciplinasStack.Navigator screenOptions={{
-        title: '',
-        headerTransparent: true,
-      }}>
-        <DisciplinasStack.Screen name="Disciplina" component={Disciplina} />
-        <DisciplinasStack.Screen name="CardDisciplinas" component={CardDisciplinas} />
-      </DisciplinasStack.Navigator>
-    );
-
-
-  }
 
   function HomeStackScreen() {
     return (
@@ -54,6 +42,13 @@ export default function MainRoutes() {
       >
         <HomeStack.Screen name="TelaInicial" component={HomeScreen} />
         <HomeStack.Screen name='TabelaPeriodica' component={TabelaPeriodica} />
+        <HomeStack.Screen name="FuncaoOrganicaScreen" component={FuncaoOrganicaScreen} options={
+          {
+            headerTintColor:"#fff",
+            headerBackTitleVisible:false,
+            headerRight: () => null,
+          }
+        } />
         <HomeStack.Screen name="Disciplina" component={Disciplina} options={
           {
             headerRight: () => <MyLogoTitle />,
@@ -64,6 +59,7 @@ export default function MainRoutes() {
             headerRight: () => <MyLogoTitle />,
           }
         } />
+        
         <HomeStack.Group
           screenOptions={() => ({
             presentation: 'modal',
@@ -71,6 +67,7 @@ export default function MainRoutes() {
           })}
         >
           <HomeStack.Screen name="InfoElemento" component={InfoElemento} />
+          
         </HomeStack.Group>
 
       </HomeStack.Navigator>

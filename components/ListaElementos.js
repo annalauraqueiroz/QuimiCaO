@@ -1,8 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React, {Component, useState} from 'react';
-import { useNavigation } from '@react-navigation/native';
-import { Text, View, Image, FlatList, ScrollView, TouchableOpacity} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { Text, View, TouchableOpacity} from 'react-native';
 import { periodicTableStyles } from '../assets/styles/periodicTableStyles.js';
 import Elementos from '../DATABASE/PeriodicTableDB.js';
 
