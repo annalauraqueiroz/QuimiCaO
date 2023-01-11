@@ -22,7 +22,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around'
   },
-  
   ImgIcones:{
     maxWidth: 90,
     maxHeight: 90

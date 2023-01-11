@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Text, View, FlatList, Image, ImageBackground, TouchableOpacity} from 'react-native';
 import { styles } from '../assets/styles/mainStyles.js';
-import Dados from '../DATABASE/ConteudosDB'
+import Dados from '../data/ConteudosDB'
 
 
 const UniqueCard = ({ item, onPress }) => (
@@ -11,7 +11,10 @@ const UniqueCard = ({ item, onPress }) => (
       style={styles.card}
       onPress={onPress}
     >
-      <Image style={styles.ImgIcones} source={item.img} />
+      <Image
+      source={item.img}
+      style={styles.ImgIcones}
+    />
       <Text style={styles.TextTitulo} adjustsFontSizeToFit={true}>{item.title}</Text>
 
     </TouchableOpacity>

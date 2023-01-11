@@ -3,40 +3,15 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Text, View, ScrollView } from 'react-native';
 import { periodicTableStyles } from '../assets/styles/periodicTableStyles.js';
-import Elementos from '../DATABASE/PeriodicTableDB.js';
-import ListaElementos from '../components/ListaElementos.js';
+import Elementos from '../data/PeriodicTableDB.js';
+import ListaElementos from '../components/Elementos/ListaElementos.js';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
-const bgColor = (props) => {
-
-  switch (props.class) {
-    case 'Não metal':
-      return '#76ED69';
-    case 'Metal alcalino':
-      return '#EB984E';
-    case 'Metal alcalino-terroso':
-      return '#F4D03F';
-    case 'Metal de transição':
-      return '#EC7063';
-    case 'Metal de pós-transição':
-      return '#73C6B6';
-    case 'Semimetal':
-      return '#85C1E9';
-    case 'Halógeno':
-      return '#17A589';
-    case 'Gás nobre':
-      return '#A569BD';
-    case 'Lantanídeos':
-      return '#40E0D0';
-    case 'Actinídio':
-      return '#CCCCFF';
-  }
-}
+import bgColor from '../components/Elementos/getBgColorByGroupBlock.js'
 
 
 export default function TabelaPeriodica() {
   const navigation = useNavigation();
-
+  
   return (
     <View style={periodicTableStyles.container}>
       <StatusBar style="dark" />
@@ -45,7 +20,7 @@ export default function TabelaPeriodica() {
           <View style={periodicTableStyles.containerGrupos}>
 
             <View style={periodicTableStyles.typeGroup}>
-              <View style={[periodicTableStyles.cardGrupo, { backgroundColor: bgColor(Elementos[0]) }]} />
+              <View style={[periodicTableStyles.cardGrupo, { backgroundColor: Elementos[0].cpkHexColor }]} />
               <Text style={periodicTableStyles.txtNatm}> Não metal </Text>
             </View>
 
@@ -105,35 +80,24 @@ export default function TabelaPeriodica() {
           </View>
 
           <ScrollView horizontal={true} alwaysBounceHorizontal={true} maximumZoomScale={2.0}>
-
             <View style={periodicTableStyles.sviewContainer}>
-              <View style={periodicTableStyles.f1}>
-                <Text style={periodicTableStyles.txtLabelGroup}>1A</Text>
-                <ListaElementos familia="1A" navigation={navigation} />
-              </View>
-              <View style={periodicTableStyles.f1}>
-                <Text style={periodicTableStyles.txtLabelGroup}>2A</Text>
-                <ListaElementos familia="2A" navigation={navigation} />
-              </View>
-
               <View>
+                <Text style={periodicTableStyles.txtLabelGroup}>1A</Text>
+                <ListaElementos group='1' navigation={navigation} />
+              </View>
+              <View>
+                <Text style={periodicTableStyles.txtLabelGroup}>2A</Text>
+                <ListaElementos group="2" navigation={navigation} />
+              </View>
+              <View>
+                
+                <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>3B</Text>
-                <View style={periodicTableStyles.coluna}>
-                  <View style={[periodicTableStyles.cardElemento, { backgroundColor: bgColor(Elementos[20]) }]} >
-                    <Text style={periodicTableStyles.txtNatm}>{Elementos[20].nAtomico}</Text>
-                    <Text style={periodicTableStyles.txtSymbol}>{Elementos[20].simbolo}</Text>
-                  </View>
+                    <ListaElementos group='3' groupBlock="Metal de transição" navigation={navigation} />
                 </View>
 
                 <View style={periodicTableStyles.coluna}>
-                  <View style={[periodicTableStyles.cardElemento, { backgroundColor: bgColor(Elementos[38]) }]} >
-                    <Text style={periodicTableStyles.txtNatm}>{Elementos[38].nAtomico}</Text>
-                    <Text style={periodicTableStyles.txtSymbol}>{Elementos[38].simbolo}</Text>
-                  </View>
-                </View>
-
-                <View style={periodicTableStyles.coluna}>
-                  <View style={[periodicTableStyles.cardElemento, { backgroundColor: bgColor(Elementos[100]) }]}>
+                  <View style={[periodicTableStyles.cardElemento, { backgroundColor: bgColor(Elementos[110]) }]}>
                     <Text style={periodicTableStyles.txtSymbol}> 57 - 71 </Text>
                   </View>
                 </View>
@@ -146,73 +110,77 @@ export default function TabelaPeriodica() {
 
               </View>
 
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>4B</Text>
-                <ListaElementos familia="4B" navigation={navigation} />
+                <ListaElementos group='4' navigation={navigation} />
               </View>
 
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>5B</Text>
-                <ListaElementos familia="5B" navigation={navigation} />
+                <ListaElementos group='5' navigation={navigation} />
               </View>
 
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>6B</Text>
-                <ListaElementos familia="6B" navigation={navigation} />
+                <ListaElementos group='6' navigation={navigation} />
               </View>
 
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>7B</Text>
-                <ListaElementos familia="7B" navigation={navigation} />
+                <ListaElementos group='7' navigation={navigation} />
               </View>
-              {/* os elementos 8B ocupam 3 colunas */}
 
-              <View style={[periodicTableStyles.f8B, { flexWrap: 'wrap-reverse' }]}>
+              <View style={[periodicTableStyles.flac]}>
+                
                 <View style={periodicTableStyles.f8B}>
-                  <ListaElementos familia="8B" navigation={navigation} />
+                  <ListaElementos group='8' navigation={navigation} />
                 </View>
-                <Text style={periodicTableStyles.txtLabelGroup}>8B</Text>
+                
+                <View style={periodicTableStyles.f8B}>
+                  <Text style={periodicTableStyles.txtLabelGroup}>8B</Text>
+                  <ListaElementos group='9' navigation={navigation} />
+                </View>
+
+                <View style={periodicTableStyles.f8B}>
+                  <ListaElementos group='10' navigation={navigation} />
+                </View>
+
               </View>
 
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>1B</Text>
-                <ListaElementos familia="1B" navigation={navigation} />
+                <ListaElementos group='11' navigation={navigation} />
               </View>
-
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>2B</Text>
-                <ListaElementos familia="2B" navigation={navigation} />
+                <ListaElementos group='12' navigation={navigation} />
               </View>
 
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>3A</Text>
-                <ListaElementos familia="3A" navigation={navigation} />
+                <ListaElementos group='13' navigation={navigation} />
               </View>
-
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>4A</Text>
-                <ListaElementos familia="4A" navigation={navigation} />
+                <ListaElementos group='14' navigation={navigation} />
               </View>
-
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>5A</Text>
-                <ListaElementos familia="5A" navigation={navigation} />
+                <ListaElementos group='15' navigation={navigation} />
               </View>
-
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>6A</Text>
-                <ListaElementos familia="6A" navigation={navigation} />
+                <ListaElementos group='16' navigation={navigation} />
               </View>
-
-              <View style={periodicTableStyles.f1}>
+              <View>
                 <Text style={periodicTableStyles.txtLabelGroup}>7A</Text>
-                <ListaElementos familia="7A" navigation={navigation} />
+                <ListaElementos group='17' navigation={navigation} />
+              </View>
+              <View>
+                <Text style={periodicTableStyles.txtLabelGroup}>8A</Text>
+                <ListaElementos group='18' navigation={navigation} />
               </View>
 
-              <View style={periodicTableStyles.f1}>
-                <Text style={periodicTableStyles.txtLabelGroup}>8A</Text>
-                <ListaElementos familia="8A" navigation={navigation} />
-              </View>
             </View>
 
           </ScrollView>
@@ -220,12 +188,12 @@ export default function TabelaPeriodica() {
         <ScrollView horizontal={true} alwaysBounceHorizontal={true} maximumZoomScale={2.0}>
           <View style={periodicTableStyles.gruposLAC}>
             <View style={periodicTableStyles.flac}>
-              <Text style={periodicTableStyles.txtLabel}> Lantanídeos </Text>
-              <ListaElementos familia="3B" class="Lantanídeos" navigation={navigation} />
+              <Text style={[periodicTableStyles.txtLabel, {alignSelf:'center'}]}> Lantanídeos </Text>
+              <ListaElementos group='3' groupBlock="Lantanídeo" navigation={navigation} />
             </View>
             <View style={periodicTableStyles.flac}>
-              <Text style={periodicTableStyles.txtLabel}> Actinídios </Text>
-              <ListaElementos familia="3B" class="Actinídio" navigation={navigation} />
+              <Text style={[periodicTableStyles.txtLabel, {alignSelf:'center'}]}> Actinídios </Text>
+              <ListaElementos group='3' groupBlock="Actinídeo" navigation={navigation} />
             </View>
           </View>
         </ScrollView>

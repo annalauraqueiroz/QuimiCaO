@@ -2,13 +2,14 @@ import { StyleSheet } from 'react-native';
 
 export const disciplinaStyles = StyleSheet.create({
   container:{
-    borderColor: '#b6c8e8',
+    backgroundColor: '#fafafa',
+    flex:1
   },
   logoPrincipal:{
     paddingTop:50,
   },
   card:{
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fafafa',
     borderTopLeftRadius:50,
     borderTopRightRadius:50,
     paddingLeft:15,
@@ -35,12 +36,11 @@ export const disciplinaStyles = StyleSheet.create({
     
   },
   listacards:{ 
-    display:'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
-    paddingBottom:100,
-    paddingTop:2,
-    backgroundColor:'#ffffff'
+    paddingBottom:10,
+    paddingTop:20,
+    
   },
   headerImg:{
     backgroundColor:'#04c6cf'
@@ -52,7 +52,7 @@ export const disciplinaStyles = StyleSheet.create({
     height: 110,
     margin: 8,
     alignItems: 'center',
-    justifyContent:'flex-end'
+    justifyContent:'center'
   },
   cardSubtopicos:{
     backgroundColor: '#04c6cf',
@@ -75,7 +75,8 @@ export const disciplinaStyles = StyleSheet.create({
     fontFamily:  'Zing',
     marginBottom:7,
     marginTop:10,
-    color:'black'
+    color:'black',
+    textAlign:'center'
   },
   ImgIcones:{
     alignContent:'stretch',
@@ -84,8 +85,7 @@ export const disciplinaStyles = StyleSheet.create({
   },
   txtTituloDisciplina:{
     fontSize: 50,
-    marginTop: 70,
-    marginBottom:20,
+    marginTop: '18%',
     color: '#00858b',
     fontFamily:  'Zing',
   },

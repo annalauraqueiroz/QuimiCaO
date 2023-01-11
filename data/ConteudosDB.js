@@ -43,7 +43,7 @@ const Conteudos = [
     },
     {
         idItem: 8,
-        name: "Solucoesemisturas",
+        name: "SolucoeseMisturas",
         title: "Soluções e misturas",
         img: require('../assets/images/solemisturas.png')
     },

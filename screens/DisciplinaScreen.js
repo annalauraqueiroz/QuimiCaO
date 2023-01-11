@@ -1,8 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, ImageBackground, FlatList } from 'react-native';
 import { disciplinaStyles } from '../assets/styles/disciplinasStyles';
-
-import Dados from '../DATABASE/SubtopicosDB.js'
+import Dados from '../data/SubtopicosDB.js'
 
 const UniqueCard = ({ item, onPress }) => (
   <View style={disciplinaStyles.cardSubtopicos}>
@@ -26,24 +25,16 @@ export default function Disciplina({ navigation, route }) {
     return (
       <UniqueCard
         item={item}
-        onPress={() => navigation.navigate('CardDisciplinas', {item: item})} />
+        onPress={() => navigation.navigate('CardDisciplinas', { item: item })} />
     )
   }
   return (
-    <View>
-        <View>
-          <View style={{ backgroundColor: '#227fbb' }}>
-            <View style={disciplinaStyles.container}>
-            <ImageBackground source={require('../assets/images/background.png')} resizeMode="stretch">
-                <View style={disciplinaStyles.listacards}>
-                  <Text style={disciplinaStyles.txtTituloDisciplina}>{route.params.tituloDisciplina}</Text>
-                  <FlatList contentContainerStyle={disciplinaStyles.listacards}
-                    data={DATA}
-                    renderItem={renderCard}/>
-                </View>
-                </ImageBackground>
-            </View>
-          </View>
+    <View style={disciplinaStyles.container}>
+        <View style={disciplinaStyles.listacards}>
+          <Text style={disciplinaStyles.txtTituloDisciplina}>{route.params.tituloDisciplina}</Text>
+          <FlatList contentContainerStyle={disciplinaStyles.listacards}
+            data={DATA}
+            renderItem={renderCard} />
         </View>
     </View>
   );

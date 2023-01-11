@@ -35,9 +35,9 @@ export const periodicTableStyles = StyleSheet.create({
     fontFamily: 'Zing'
   },
   f8B: {
-    maxWidth: 3 * 52,
+    maxWidth: 4 * 52,
     flexWrap: 'wrap',
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'center'
   },
   gruposLAC: {
@@ -47,7 +47,7 @@ export const periodicTableStyles = StyleSheet.create({
     alignItems: 'space-around',
   },
   flac: {
-    alignItems: 'center',
+    alignItems: 'flex-end',
     flexDirection: 'row',
   },
   coluna: {

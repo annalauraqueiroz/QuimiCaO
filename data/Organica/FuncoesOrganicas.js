@@ -57,7 +57,37 @@ const FuncoesOrganicas = [
         propriedadesFisicas:"texto aqui propriedades",
         img2: null,
         texto2: "texto"
-    }
+    },
+    {
+        id: 6,
+        titulo:"ÉSTER",
+        imgBackground: require("../../assets/images/Organica/FuncoesOrganicas/ester2.png"),
+        introducao:"texto aqui",
+        img1: null,
+        propriedadesFisicas:"texto aqui propriedades",
+        img2: null,
+        texto2: "texto"
+    },
+    {
+        id: 7,
+        titulo:"ÉSTER",
+        imgBackground: require("../../assets/images/Organica/FuncoesOrganicas/ester2.png"),
+        introducao:"texto aqui",
+        img1: null,
+        propriedadesFisicas:"texto aqui propriedades",
+        img2: null,
+        texto2: "texto"
+    },
+    {
+        id: 8,
+        titulo:"ÁCIDO CARBOXÍLICO",
+        imgBackground: require("../../assets/images/Organica/FuncoesOrganicas/ester2.png"),
+        introducao:"texto aqui",
+        img1: null,
+        propriedadesFisicas:"texto aqui propriedades",
+        img2: null,
+        texto2: "texto"
+    },
 
 ]
 export default FuncoesOrganicas;

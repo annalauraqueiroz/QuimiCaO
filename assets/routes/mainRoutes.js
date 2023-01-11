@@ -29,7 +29,6 @@ export default function MainRoutes() {
   }
 
   const HomeStack = createNativeStackNavigator();
-  const DisciplinasStack = createNativeStackNavigator();
 
 
   function HomeStackScreen() {
@@ -63,6 +62,7 @@ export default function MainRoutes() {
         <HomeStack.Group
           screenOptions={() => ({
             presentation: 'modal',
+            headerRight: () => null,
 
           })}
         >
