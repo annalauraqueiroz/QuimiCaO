@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavigationContainer, StackActions } from '@react-navigation/native';
-import { StyleSheet, Image, View, Text } from 'react-native';
+import { NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet, Image, View, Text } from 'react-native';
 
 import HomeScreen from '../../screens/Home.js'
 import Disciplina from '../../screens/DisciplinaScreen.js'
 import TabelaPeriodica from '../../screens/TabelaPeriodicaScreen.js';
 import InfoElemento from '../../screens/ModalScreen.js';
-import CardDisciplinas from '../../components/cardDisciplinas.js';
-import FuncaoOrganicaScreen from '../../screens/disciplinas/FuncaoOrganicaScreen.js';
+import TopicoScreen from '../../screens/TopicoScreen.js';
+import SubtopicoScreen from '../../screens/disciplinas/SubtopicoScreen.js';
 
 export default function MainRoutes() {
 
@@ -41,7 +41,7 @@ export default function MainRoutes() {
       >
         <HomeStack.Screen name="TelaInicial" component={HomeScreen} />
         <HomeStack.Screen name='TabelaPeriodica' component={TabelaPeriodica} />
-        <HomeStack.Screen name="FuncaoOrganicaScreen" component={FuncaoOrganicaScreen} options={
+        <HomeStack.Screen name="SubtopicoScreen" component={SubtopicoScreen} options={
           {
             headerTintColor:"#fff",
             headerBackTitleVisible:false,
@@ -53,7 +53,7 @@ export default function MainRoutes() {
             headerRight: () => <MyLogoTitle />,
           }
         } />
-        <HomeStack.Screen name="CardDisciplinas" component={CardDisciplinas} options={
+        <HomeStack.Screen name="TopicoScreen" component={TopicoScreen} options={
           {
             headerRight: () => <MyLogoTitle />,
           }
@@ -64,8 +64,7 @@ export default function MainRoutes() {
             presentation: 'modal',
             headerRight: () => null,
 
-          })}
-        >
+          })}>
           <HomeStack.Screen name="InfoElemento" component={InfoElemento} />
           
         </HomeStack.Group>

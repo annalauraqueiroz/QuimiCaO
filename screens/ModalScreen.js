@@ -2,18 +2,12 @@ import React, { useEffect, useState} from 'react'
 import { View, Text, ScrollView, Image } from 'react-native'
 import { styles } from '../assets/styles/conteudoStyles.js';
 import Icons from '../components/Elementos/importIcons.js'
-import CachedImage from 'react-native-expo-cached-image';
 
 export default function FetchElemento(props) {
 
-  const [elemento] = useState(props.route.params.elemento)
+  const [elemento] = useState(props.route.params.elemento);
   const [IcoStandardState, setIcoStandardState] = useState('');
   
-
-// preview can be a local image or a data uri
-const preview = { uri: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" };
-const uri = "https://firebasestorage.googleapis.com/v0/b/react-native-e.appspot.com/o/b47b03a1e22e3f1fd884b5252de1e64a06a14126.png?alt=media&token=d636c423-3d94-440f-90c1-57c4de921641";
-<CachedImage style={{ height: 100, width: 100 }} {...{preview, uri}} />
 
   useEffect(() => {
     switch (elemento.standardState) {
@@ -26,6 +20,7 @@ const uri = "https://firebasestorage.googleapis.com/v0/b/react-native-e.appspot.
       case 'Desconhecido':
         return setIcoStandardState(require("../assets/images/icons/desconhecido.png"));
     }
+    
   })
 
   return (
@@ -35,12 +30,6 @@ const uri = "https://firebasestorage.googleapis.com/v0/b/react-native-e.appspot.
         <View style={styles.title}>
           <Text style={styles.txtTitle}>{elemento.name}</Text>
         </View>
-        <CachedImage source={{
-          uri: `https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027-1024x683.jpg`
-        }}
-          cacheKey={`${elemento.atomicNumber}-thumb`}
-          resizeMode="contain"
-        />
         <View style={styles.circlesView}>
           <View style={styles.circleCard}>
             <View style={styles.circle}>
@@ -51,7 +40,7 @@ const uri = "https://firebasestorage.googleapis.com/v0/b/react-native-e.appspot.
           </View>
           <View style={styles.circleCard}>
             <View style={[styles.circle, {borderColor:'#a2dfd9'}]}>
-              <Image style={[styles.imgPrincipalCircle]} source={Icons[10]} />
+              <Image style={[styles.imgPrincipalCircle]} source={Icons[10]} loadingIndicatorSource={'https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif'}/>
             </View>
             <Text style={styles.txtValueTitle}>{elemento.atomicNumber}</Text>
             <Text style={styles.txtValueSubtitle}>número atômico</Text>

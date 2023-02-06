@@ -6,25 +6,30 @@ export const foStyles = StyleSheet.create({
         marginRight: 21,
         marginLeft:20
     },
+    principal:{
+        paddingBottom: 40
+    },
     titulo:{
         color:'#00484B',
-        fontSize: 37,
+        fontSize: 34,
         marginTop:8,
-        marginBottom:15,
+        marginBottom:3,
         fontFamily:'Montserrat_800ExtraBold'
 
     },
     subtitulo:{
         color:"#00484B",
         fontSize:23,
-        marginTop:14,
-        marginBottom:11,
+        marginTop:10,
+        marginBottom:2,
         fontFamily:'Montserrat_800ExtraBold'
     },
     txtPropriedades:{
        fontSize: 15,
        color:"#00484B",
-       textAlign:'justify'
+       textAlign:'justify',
+       fontFamily:'Montserrat_400Regular',
+       paddingTop: 10
     },
     img:{
         marginTop:12,
@@ -37,12 +42,61 @@ export const foStyles = StyleSheet.create({
     img2:{
         marginTop:12,
         marginBottom:10,
-        maxHeight:200,
-        maxWidth:500,
         marginLeft:10,
         marginRight:10,
+        height:80,
         alignSelf:'center',
-        resizeMode:'contain'
+        resizeMode:'contain',
+        
+    },
+    curiosidade:{
+        marginTop:15,
+        backgroundColor:'#c6e8e9',
+        borderBottomLeftRadius:15,
+        borderTopLeftRadius:20,
+        borderBottomRightRadius:15,
+        borderTopRightRadius:15,
+        flexDirection:'row',
+        alignItems:'center',
+        padding:12,
+        
+    },
+    viewtxtCuriosidade:{
+        flexShrink:1,
+        flexDirection:'row',
+        flexWrap:'wrap',
+        justifyContent:'center'
+    },
+    txtCuriosidade:{
+        textAlign:'left',
+        marginLeft:10,
+        fontSize: 11,
+        color:"#00484B",
+        fontFamily: 'Montserrat_400Regular'
+    },
+    txtLegenda:{
+        textAlign:'center',
+        marginLeft:10,
+        fontSize: 11,
+        color:"#00484B",
+        fontFamily: 'Montserrat_400Regular',
+        
+    },
+    imgCuriosidade:{
+        maxHeight:40,
+        maxWidth:40,
+    },
+    images:{
+        flexDirection:'row',
+        justifyContent:'space-around',
+    },
+    txtNomenclatura:{
+        textAlign:'center',
+        color:'#FF8000',
+        fontSize: 12,
+        marginTop:8,
+        marginBottom:15,
+        fontFamily:'Montserrat_800ExtraBold'
     }
 
 })

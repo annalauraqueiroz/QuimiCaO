@@ -32,13 +32,12 @@ export default function HomeScreen({ navigation }) {
         item={item}
         onPress={() => 
           item.name != "TabelaPeriodica"?(
-            
             navigation.navigate('Disciplina', {
               nome: item.name,
               tituloDisciplina: item.title,
         })
           ):(
-            navigation.navigate(item.name, {
+            navigation.navigate('TabelaPeriodica', {
               nome: item.name,
         })
           )}
@@ -47,7 +46,7 @@ export default function HomeScreen({ navigation }) {
     )
   }
   return (
-    <View style={{ backgroundColor: '#227fbb' }}>
+    <View style={{ backgroundColor: '#227fbb' , flex:1}}>
       <View style={styles.container}>
         <ImageBackground source={require('../assets/images/background.png')} resizeMode="cover" >
           <StatusBar style="dark" />
@@ -56,7 +55,6 @@ export default function HomeScreen({ navigation }) {
             numColumns={numColums}
             data={DATA}
             renderItem={renderUniqueCard}
-
           />
         </ImageBackground>
       </View>

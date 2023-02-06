@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, ImageBackground, FlatList } from 'react-native';
+import { Text, View, TouchableOpacity, FlatList } from 'react-native';
 import { disciplinaStyles } from '../assets/styles/disciplinasStyles';
 import Dados from '../data/SubtopicosDB.js'
 
@@ -25,7 +25,7 @@ export default function Disciplina({ navigation, route }) {
     return (
       <UniqueCard
         item={item}
-        onPress={() => navigation.navigate('CardDisciplinas', { item: item })} />
+        onPress={() => navigation.navigate('TopicoScreen', { idItem: item.id, isList: item.isList })} />
     )
   }
   return (

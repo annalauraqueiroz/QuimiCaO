@@ -6,18 +6,18 @@ export const disciplinaStyles = StyleSheet.create({
     flex:1
   },
   logoPrincipal:{
-    paddingTop:50,
+    paddingTop:80,
   },
   card:{
     backgroundColor: '#fafafa',
-    borderTopLeftRadius:50,
-    borderTopRightRadius:50,
+    borderTopLeftRadius:45,
+    borderTopRightRadius:45,
     paddingLeft:15,
     paddingRight: 15,
   },
   imgLogo:{
-    width:230,
-    height:230,
+    maxWidth:310,
+    height:250,
     alignSelf:'center'
   },
   txtTitulo:{
@@ -85,7 +85,7 @@ export const disciplinaStyles = StyleSheet.create({
   },
   txtTituloDisciplina:{
     fontSize: 50,
-    marginTop: '18%',
+    marginTop: '22%',
     color: '#00858b',
     fontFamily:  'Zing',
   },

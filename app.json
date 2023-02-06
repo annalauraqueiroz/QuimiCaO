@@ -3,8 +3,27 @@
     "name": "AppTCC",
     "slug": "AppTCC",
     "version": "1.0.0",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1b3fa2"
+    },
+    "icon": "./assets/images/icons/iconeApp.png",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.annamaria.quimicao",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.annamaria.quimicao",
+      "versionCode": 1
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bc554ad0-921f-4b3e-8334-da37f3731328"
+      }
+    }
   }
 }

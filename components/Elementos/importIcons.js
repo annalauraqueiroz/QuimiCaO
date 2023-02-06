@@ -9,7 +9,7 @@ const Icons = [
     require("../../assets/images/icons/energia.png"),
     require("../../assets/images/icons/ano.png"),
     require("../../assets/images/icons/balanca.png"),
-    require("../../assets/images/icons/atom2.gif")
+    require("../../assets/images/icons/atom2.png")
 
 ]
     

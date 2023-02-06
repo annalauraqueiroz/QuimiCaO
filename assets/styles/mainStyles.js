@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
    marginLeft:21,
    marginRight: 21,
    borderColor: '#1b3fa2',
+   
     
   },
   listacards:{
