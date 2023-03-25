@@ -1,5 +1,5 @@
 # QuimiCAO
-Esse aplicativo contém uma tabela periodica completa, com informações diversas sobre todos os elementos, além de possuir diversos conteúdos das áreas básicas da química. 
+Esse aplicativo contém uma tabela periodica completa e interativa, com informações diversas sobre todos os elementos, além de possuir diversos conteúdos das áreas básicas da química. 
   - Química orgânica
   - Estrutura atômica
   - Ligações Químicas
