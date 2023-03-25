@@ -9,4 +9,4 @@ Esse aplicativo contém uma tabela periodica completa, com informações diversa
   - Soluções e misturas
   - Funções Inorgânicas.
   
- O aplicativo está em desenvolvimento e nossa base de dados está sendo construida a partir dos diversos livros indicados na bibliografia básica do curso de Engenharia Química da UNIFAL. O objetivo do APP é auxiliar os estudantes da universidade com a base de dados completa para estudos.
+ Nossa base de dados foi construida a partir dos diversos livros indicados na bibliografia básica do curso de Engenharia Química da UNIFAL. O objetivo do APP é auxiliar os estudantes da universidade com a base de dados completa para estudos.
